@@ -47,6 +47,6 @@ class Song
         artist_count[artist] = 1
       end
     end
-    self.artist_count
+    artist_count
   end    
 end
