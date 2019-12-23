@@ -15,6 +15,9 @@ class Song
     @@count
   end
   
-  def self.genres
-     @@genres 
+  def self.genres(genre)
+    if @@genres != nil
+      @@genre << genre
+    else
+      
 end
