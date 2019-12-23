@@ -18,15 +18,13 @@ class Song
     @@count
   end
   
-  def self.artists(artist)
-    if @@artists.includes?(artist) == false
-      @@artists << artist
+  def self.artists
+    @@artists.uniq
     end
   end
   
   def self.genres(genre)
-    if @@genre.includes?(genre) == false
-      @@genre << genre
+    @@genres.uniq
     end
   end
   
